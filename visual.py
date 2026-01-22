@@ -51,9 +51,9 @@ def visualize():
 
     # Tree
     plt.figure()
-    dendrogram(linkage_matrix, color_threshold = 0)
+    dendrogram(linkage_matrix, color_threshold = 0, leaf_font_size = 3)
     plt.title("Phylogenetic Tree of 135 Bacterial Sequences")
     plt.ylabel("Distance")
     plt.xlabel("Baterica ID")
-    plt.gcf().set_size_inches(15,20)
+    plt.gcf().set_size_inches(8, 4.5)
     plt.savefig('./data/tree.svg', bbox_inches='tight')
