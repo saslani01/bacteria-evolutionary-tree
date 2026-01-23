@@ -54,3 +54,28 @@ def create_normalized_and_distance_matrices():
     
     np.savetxt("./data/normalized_similarity_matrix.txt", np.array(normalized_matrix), fmt='%.6f', delimiter='\t')
     np.savetxt("./data/distance_matrix.txt", np.array(distance_matrix), fmt='%.6f', delimiter='\t')
+
+def print_furtherst_and_closest_ids():
+    """
+    This function calculate the furthest and closest bacterias and the distance between them.
+    """
+    
+    distance_matrix = np.loadtxt("./data/distance_matrix.txt", delimiter = '\t')
+    n = len(distance_matrix)
+
+    min_distance = float("inf")
+    max_distance = float("-inf")
+    closet = None
+    furthest = None
+    for i in range(n):
+        for j in range(i + 1, n):
+            d = distance_matrix[i][j]
+        
+            if d < min_distance:
+                min_distance = d
+                closet = [i, j]
+            if d > max_distance:
+                max_distance = d
+                furthest = [i, j]
+
+    print(f"FURTHEST: ID's {furthest[0]} and {furthest[1]} with distance of {max_distance}\nCLOSEST: ID's {closet[0]} and {closet[1]} with distance of {min_distance}")
