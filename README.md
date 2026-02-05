@@ -37,6 +37,24 @@ distance = 1 - normalized_score
 
 The pipeline uses agglomerative hierarchical clustering with average linkage to build the phylogenetic tree. The optimal number of clusters is determined using silhouette scores, which balance intra-cluster cohesion and inter-cluster separation.
 
+## Data
+
+The dataset comprises 135 bacterial protein sequences, including both naturally occurring strains and synthetically generated variants designed to explore sequence space and evolutionary patterns. 
+
+**Data Source:** This analysis was conducted using sequences and methodological framework developed by **Borislav Hristov, Ph.D.**
+
+### Dataset Characteristics
+
+- 135 bacterial protein sequences
+- Mixed composition of natural and synthetic strains
+- Sequences selected to represent diverse evolutionary relationships
+- Format: Tab-separated values (ID, sequence)
+- Location: `./data/protein_sequences.txt`
+
+### Acknowledgments
+
+We gratefully acknowledge Dr. Borislav Hristov for providing the protein sequence dataset and analytical framework that enabled this phylogenetic investigation.
+
 ## Requirements
 
 - Python 3.12
