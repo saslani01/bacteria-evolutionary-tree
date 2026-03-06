@@ -1,6 +1,9 @@
-#  🧬 Bacterial Phylogenetic Analysis
+# Bacterial Phylogenetic Analysis
 
 A computational pipeline for analyzing evolutionary relationships between bacterial strains through protein sequence alignment, clustering, and phylogenetic tree reconstruction.
+
+For the full write-up including methods, results, and analysis, see [report.pdf](./report.pdf).
+
 
 ## Overview
 
