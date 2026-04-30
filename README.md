@@ -2,9 +2,6 @@
 
 A computational pipeline for analyzing evolutionary relationships between bacterial strains through protein sequence alignment, clustering, and phylogenetic tree reconstruction.
 
-For the full write-up including methods, results, and analysis, see [report.pdf](./report.pdf).
-
-
 ## Overview
 
 This project analyzes 135 bacterial strains by aligning their protein sequences, computing similarity scores and distances, performing hierarchical clustering, and reconstructing a phylogenetic tree. The pipeline implements the Smith-Waterman algorithm for sequence alignment and uses agglomerative clustering with average linkage to infer evolutionary relationships.
